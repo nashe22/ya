@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Nayelis</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Nayelis</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<title>i live so i love</title><style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="shortcut icon" href="https://64.media.tumblr.com/d2b656fd6e467b24191739fa82bce487/fbf8e3effe1ead82-71/s128x128u_c1/d10f53f1c0947a7c933cf91c57e5aa076e2ac732.pnj"><link rel="alternate" type="application/rss+xml" "https://pirateskinned.tumblr.com/rss"><meta name="description" content="" /><!-- scripts --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!-- fonts --><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet"><!-- tooltips --><script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script><!-- icon font -- feathericons.com --><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script>
+<script src="//glenthemes.github.io/-music-/glenplayer07.js"></script><script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+            
+            feather.replace();
+        });
+    })(jQuery);
+</script><style type="text/css">
+
+/* ---
+
+    THEME OPTIONS
+    
+--- */
+
+
+:root {
+    
+    --background:#ffffff;
+    --border:#d2a193;
+    --text:#4f4e4e;
+    --accent:#ECA99A;
+    
+    --font-size:12px;
+    
+    --background-image:url('URL_HERE');
+    
+}
+
+/* ---  tumblr controls styling by cyantists
+        http://cyantists.tumblr.com/tumblr_controls/hover --- */
+
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:-2px!important;
+    right:0!important;
+    opacity:0;
+    padding-right:38px;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+
+.hcontrols {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999999999;}
+
+.hcontrols svg {
+    width:14px;
+    height:14px;
+    padding:9px;}
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:9999;
+    padding:3px 7px;
+    background:var(--background);
+    color:var(--text);
+    font-size:var(--font-size);
+    border:2px solid var(--border);
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb {background-color:var(--text);}
+::-webkit-scrollbar {background-color:transparent; width:1px; height:1px;}
+  
+  /*-------MUSIC PLAYER-------*/
+#glenplayer07 {
+   position:fixed;
+   bottom:0;
+   margin-bottom:76px;
+   left:0;
+   margin-left:30px;
+   z-index:99;
+}
+
+.flamingo {
+   display:flex;
+   align-items:center;
+}
+
+.circleofdeath {
+   width:var(--Circle-Size);
+   height:var(--Circle-Size);
+   border-radius:100%;
+   overflow:hidden;
+}
+
+.tinfoil {
+   width:var(--Circle-Size);
+   height:var(--Circle-Size);
+   background:var(--Progress-Empty);
+   border-radius:100%;
+}
+
+.oven {
+   background:var(--Progress-Fill);
+}
+
+.oliveoil {
+   width:100%;
+   height:100%;
+}
+
+.crust {
+   position:absolute;
+   top:0;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width:var(--Circle-Size);
+   height:var(--Circle-Size);
+}
+
+.cherry {
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width:calc(var(--Circle-Size) - (var(--Progress-Border-Size) * 2));
+   height:calc(var(--Circle-Size) - (var(--Progress-Border-Size) * 2));
+   background:var(--Player-Background);
+   border-radius:100%;
+   cursor:pointer;
+   z-index:1;
+}
+
+.music-controls {display:flex;align-items:center}
+
+.music-controls .material-icons {
+   font-size:var(--Play-Pause-Buttons-Size);
+   color:var(--Play-Pause-Buttons-Color);
+}
+
+.pausee {display:none;}
+
+.beff {display:none;}
+.aff {display:block;}
+
+.music-info {
+   margin-left:var(--Player-Text-Margin);
+   line-height:1em;
+}
+
+.song-name {
+   font-family:ABeeZee;
+   font-size:var(--Song-Name-Font-Size);
+   text-transform:uppercase;
+   letter-spacing:1.5px;
+   color:var(--Song-Name-Color);
+}
+
+.artist-name {
+   margin-top:3px;
+   font-family:sen;
+   font-size:var(--Artist-Name-Font-Size);
+   letter-spacing:0.3px;
+   color:var(--Artist-Name-Color);
+}
+
+.glenjamin {
+    position:fixed;
+    bottom:0;padding-bottom:21px;
+    right:0;padding-right:21px;
+}
+
+.glenjamin svg {
+    width:11px;
+    height:11px;
+    color:var(--Credit-Color);
+}
+
+.glenjamin:hover svg {color:var(--Credit-Color-On-Hover);}
+
+/* --- basics --- */
+
+body {
+    background-color:var(--background);
+    background-image:var(--background-image);
+    background-attachment:fixed;
+    background-position:center center;
+    /* -- if no repeated background --
+    background-repeat:no-repeat;
+    background-size:cover;
+    -- */
+    background-repeat:repeat;
+    background-size:auto;
+    color:var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size:var(--font-size);
+    line-height:1.5em;
+    font-weight:400;
+    text-align:left;
+    margin:0;
+}
+
+a {
+    color:var(--text);
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:var(--text);
+        text-decoration:none;
+    }
+    
+p a, li a
+{box-shadow:var(--border) 0px -1px 0px inset;}
+p a:hover, li a:hover
+{box-shadow:var(--accent) 0px -12px 0px inset;}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+u {
+    text-decoration:none;
+}
+
+    .firstletter, u {
+        display:block;
+        float:left;
+        padding:12px 14px;
+        color:var(--accent);
+        text-transform:uppercase;
+        font-size:calc(var(--font-size) + 4px);
+        margin:0px 10px 0px 0px;
+        font-family: 'Poppins', sans-serif;
+        font-weight:500;
+    }
+
+small, sub, sup, big {
+    font-size:var(--font-size);
+    line-height:1.5em;
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid var(--border);
+    margin-left:5px;
+    margin-right:0px;
+}
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:none;
+    }
+    
+        ul li:before {
+          content: "— ";
+          text-indent: -5px;
+        }
+        
+hr {
+    border:none;
+    border-bottom:1px solid var(--border);
+    width:calc(100% - 150px);
+    margin:0px auto 20px auto;
+}
+
+svg.feather {
+    width:18px;
+    height:18px;
+}
+    
+/* --- home link --- */
+
+.home-link {
+    position:fixed;
+    z-index:800;
+    font-size:14px;
+    left:10px;
+    top:10px;
+    width:200px;
+    text-align:left;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+.home-link b {
+    font-size:16px;
+}
+
+.home-link a {
+    width:100%;
+    height:30px;
+    display:flex;
+    align-items:center;
+}
+
+    .home-link a svg {margin-right:5px;}
+    
+    .home-link a:hover {color:var(--border);}
+    
+/* --- container --- */
+
+.container {
+    position:absolute;
+    z-index:600;
+    top:calc(50% - 290px);
+    left:calc(50% - 525px);
+    width:1050px;
+    height:580px;
+}
+    
+.overview:before,
+.muse-stats:before,
+.muse-bars:before,
+.muse-calendar:before,
+.muse-img:before
+{
+    content:'•••';
+    position:absolute;
+    z-index:2;
+    top:0px;
+    left:0px;
+    width:calc(100% - 15px);
+    height:24px;
+    padding-left:15px;
+    padding-bottom:4px;
+    border-radius:5px 5px 0px 0px;
+    background-color:var(--background);
+    border-bottom:2px solid var(--border);
+    color:var(--border);
+    font-size:34px;
+    letter-spacing:2px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+  
+/* --- muses overview --- */
+
+.overview {
+    position:absolute;
+    z-index:500;
+    top:50px;
+    left:0px;
+    width:291px;
+    height:280px;
+    border:2px solid var(--border);
+    border-radius:7px;
+    box-shadow:5px 5px 0px var(--border);
+}
+
+    .overview-muses {
+        margin-top:30px;
+        width:calc(100% - 20px);
+        height:calc(100% - 50px);
+        overflow:auto;
+        padding:10px;
+        background-color:var(--background);
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-content:flex-start;
+    }
+    
+        .overview-muses a {
+            width:80px;
+            height:80px;
+            margin:5px;
+        }
+        
+            .overview-muses a img {
+                width:80px;
+                height:80px;
+                border-radius:7px;
+                border:2px solid var(--border);
+            }
+            
+            .overview-muses a:hover {
+                opacity:50%;
+            }
+    
+    .overview-tape {
+        position:absolute;
+        z-index:501;
+        top:30px;
+        left:120px;
+        width:120px;
+        height:35px;
+        transform:rotate(-2deg);
+        font-family:'Nanum Pen Script', cursive;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:30px;
+    }
+    
+        .overview-tape:before {
+            content:'';
+            position:absolute;
+            z-index:-1;
+            width:120px;
+            height:35px;
+            opacity:0.5;
+            border-radius:3px;
+            background-color:white;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border), transparent 1px);
+            background-size: 10px 10px;
+            background-position:center center;
+        }
+
+.overview-blob {
+    position:absolute;
+    z-index:1;
+    top:-90px;
+    left:-90px;
+    width:500px;
+    height:500px;
+    transform: scaleX(-1);
+}
+
+    .overview-blob svg {
+        fill:var(--accent);
+    }
+
+/* --- muses container --- */
+
+.muses-container {
+    position:absolute;
+    z-index:200;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+/* --- muse block --- */
+
+.muse {
+    position:relative;
+    margin:0px;
+    width:1050px;
+    height:600px;
+}
+
+    .text-overflow {
+        position:relative;
+        margin-top:30px;
+        width:100%;
+        height:calc(100% - 30px);
+        overflow:auto;
+        padding:10px 20px 20px 20px;
+        box-sizing:border-box;
+    }
+        
+    .muse-stats {
+        position:absolute;
+        z-index:8;
+        left:340px;
+        top:0px;
+        width:310px;
+        height:300px;
+        border:2px solid var(--border);
+        border-radius:7px;
+        box-shadow:5px 5px 0px var(--border);
+        background-color:var(--background);
+    }
+    
+        .muse-stats .stat {
+            width:100%;
+            height:auto;
+            margin:10px 0px;
+            box-shadow:inset 0px 10px 0px var(--background), inset 0px 12px 0px var(--border);
+            display:flex;
+            justify-content:space-between;
+            align-items:baseline;
+        }
+    
+            .stat b {
+                max-width:40%;
+                font-weight:700;
+                color:var(--border);
+                background-color:var(--background);
+                padding:2px 10px 2px 0px;
+                font-size:calc(var(--font-size) + 2px);
+                text-align:left;
+            }
+            
+            .stat span {
+                max-width:55%;
+                background-color:var(--background);
+                padding:0px 0px 0px 10px;
+                text-align:right;
+            }
+            
+    .muse-quote {
+        position:absolute;
+        top:20px;
+        right:20px;
+        width:300px;
+        height:230px;
+        text-align:right;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        align-content:flex-start;
+    }
+    
+        .muse-quote .name {
+            font-size:40px;
+            line-height:44px;
+            font-weight:700;
+            margin-bottom:10px;
+            text-transform:uppercase;
+        }
+        
+        .muse-quote .name b {
+            font-weight:900;
+            color:var(--border);
+        }
+        
+        .muse-quote .title {
+            font-size:30px;
+            line-height:34px;
+        }
+
+    .muse-img {
+        position:absolute;
+        right:25px;
+        bottom:50px;
+        width:245px;
+        height:300px;
+        border:2px solid var(--border);
+        border-radius:7px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center center;
+        box-shadow:5px 5px 0px var(--border);
+    }
+    
+        .muse-img:after {
+            content:'';
+            position:absolute;
+            top:50px;
+            right:-20px;
+            width:35px;
+            height:130px;
+            opacity:0.5;
+            border-radius:3px;
+            background-color:white;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border), transparent 1px);
+            background-size: 10px 10px;
+            background-position:center center;
+            transform:rotate(4deg);
+        }
+    
+    .muse-bars {
+        position:absolute;
+        z-index:9;
+        left:105px;
+        top:370px;
+        width:340px;
+        height:200px;
+        border:2px solid var(--border);
+        border-radius:7px;
+        box-shadow:5px 5px 0px var(--border);
+        background-color:var(--background);
+    }
+    
+        .bar-title {
+            margin-top:10px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        
+        .muse-bars .bar {
+            position:relative;
+            width:100%;
+            height:10px;
+            padding:2px;
+            margin-bottom:5px;
+            border-radius:10px;
+            border:2px solid var(--border);
+        }
+        
+        .muse-bars .bar-filled {
+            position:relative;
+            height:10px;
+            border-radius:7px;
+            background-color:var(--border);
+            background-image: linear-gradient(126deg, var(--border) 37.50%, var(--background) 37.50%, var(--background) 50%, var(--border) 50%, var(--border) 87.50%, var(--background) 87.50%, var(--background) 100%);
+            background-size: 9.89px 13.61px;
+        }
+    
+    .muse-calendar {
+        position:absolute;
+        z-index:10;
+        left:440px;
+        top:290px;
+        width:200px;
+        height:auto;
+        border:2px solid var(--border);
+        border-radius:7px;
+        box-shadow:5px 5px 0px var(--border);
+        background-color:var(--background);
+        padding:50px 20px 20px 20px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-content:flex-start;
+    }
+    
+        .muse-calendar span {
+            width:calc(200px / 7);
+            height:calc(200px / 7);
+            margin:0px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        
+            .muse-calendar span b {
+                width:100%;
+                height:100%;
+                font-weight:normal;
+                border-radius:20px;
+                box-shadow:inset 0px 0px 0px 2px var(--border);
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+        
+    .muse-links {
+        position:absolute;
+        left:715px;
+        bottom:0px;
+        height:400px;
+        width:30px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-content:center;
+    }
+    
+        .muse-links a {
+            width:20px;
+            height:20px;
+            margin:15px 15px;
+        }
+        
+            .muse-links a svg {
+                width:20px;
+                height:20px;
+                fill:var(--accent);
+            }
+        
+            .muse-links a:hover {
+                transform:scale(1.2,1.2);
+            }
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+
+</style><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="Tumblr" /><meta property="og:title" content="Tumblr" /><meta property="og:url" content="https://pirateskinned.tumblr.com/p/12" /><meta property="og:type" content="article" /><meta property="og:determiner" content="a" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;postID=" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;postID=" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="pirateskinned" /><meta name="twitter:title" content="pirateskinned" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;referrer=twitter-cards" /><link rel="canonical" "https://pirateskinned.tumblr.com/p/12" /></head><body><div class="hcontrols"><i data-feather="settings"></i></div><div class="home-link"> 
+    </a><br><b></b><a "https://payhip.com/b/ZiaLe">
+  <!-------MUSIC PLAYER------->
+    <script>
+        // CREDITS XEVANGELIST
+        $(document).ready(function() {
+            var playing = false
+            let audioData = [];
+            var song = new Audio();
+            var CurrentSong = 0;
+            window.onload = load();
+
+            function load() {
+                audioData = [{
+                    name: "TT",
+                    artist: "TWICE",
+                    src: "https://cdn.discordapp.com/attachments/923668555927552010/953151022530965574/twice-tt-hanromeng-color-coded-lyrics.mp3"
+                }];
+                song.src = audioData[CurrentSong].src;
+            }
+
+            function playSong() {
+                var curSong = audioData[CurrentSong];
+                artistname.html(curSong.artist);
+                musicName.html(curSong.name);
+                song.src = curSong.src;
+                song.play({});
+                $("#play").addClass("fa-pause");
+                $("#play").removeClass("fa-play");
+                $("img").addClass("active");
+                $(".player-track").addClass("active");
+            }
+            $("#play").click(function playOrPause() {
+                if (song.paused) {
+                    song.play();
+                    playing = true
+                } else {
+                    song.pause();
+                    playing = false
+                }
+            })
+        });
+    </script>
+<div id="glenplayer07">
+   <div class="flamingo">
+       <div class="circleofdeath">
+           <div class="tinfoil">
+               <div class="oliveoil"></div>
+           </div>
+          <div class="crust">
+               <div class="cherry">
+                   <div class="music-controls">
+                       <img id="play" src="https://i.ibb.co/G28wRnB/Image-processing20190910-19116-1hl22r0.gif" alt="">
+                   </div>
+               </div><!--cherry-->
+           </div><!--crust-->
+       </div><!--circleofdeath-->
+
+       <div class="music-info">
+           <div class="song-name"></div>
+           <div class="artist-name"></div>
+       </div><!--music-info-->
+   </div><!--flamingo-->
+</div><!--glenplayer07-->
+
+<!----end music player---->
+       
+    </a></div><div class="container"><div class="overview-tape">뮤즈 click !</div><div class="overview-blob"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg"><path id="blob" d="M440.5,310.5Q460,371,401,390Q342,409,296,406Q250,403,218.5,380.5Q187,358,150,343.5Q113,329,84,289.5Q55,250,48.5,190Q42,130,89,91Q136,52,193,100.5Q250,149,294.5,122Q339,95,398.5,112.5Q458,130,439.5,190Q421,250,440.5,310.5Z"></path></svg></div><div class="overview"><div class="overview-muses"><!-- MUSES OVERVIEW
+        for every muse you want to add, add a block with an image here.
+        make sure under href="#NAME" that you use the same name here as
+        on the block that has all their info, otherwise the link won't
+        work!
+        
+        <a href="#NAME" title="muse name you see on hover"><img src="IMG_URL"></a>
+        
+        --><a href="#muse-1" title="Jihyo"><img src="https://i.ibb.co/QkZSqSq/5.png"></a><a href="#muse-2" title="Mina"><img src="https://i.ibb.co/w0Q7Vbp/6.png"></a><a href="#muse-3" title="Momo"><img src="https://i.ibb.co/vB0MwSb/3.png"></a><a href="#muse-4" title="Chaeyoung"><img src="https://i.ibb.co/QK9CRcn/8.png"></a><a href="#muse-5" title="Sana"><img src="https://i.ibb.co/txJvGqS/4.png"></a><a href="#muse-6" title="Dahyun"><img src="https://i.ibb.co/qD1fkfS/7.png"></a><a href="#muse-7" title="Nayeon"><img src="https://i.ibb.co/3svyhTB/1.png"></a><a href="#muse-8" title="Jeongyeon"><img src="https://i.ibb.co/Hg1WxTF/2.png"></a><a href="#muse-9" title="Tzuyu"><img src="https://i.ibb.co/qFFtCT2/9.png"></a></div></div><!-- start of individual muses --><div class="muses-container"><!-- SINGLE MUSE BLOCK
+    for every muse, copy a whole block.
+    the id="NAME" should be the same as the name you've used above --><div id="muse-1" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>name</b><span>naye</span></div><div class="stat"><b>pronouns</b><span>she/her</span></div><div class="stat"><b>age</b><span>18</span></div><div class="stat"><b>occupation</b><span>nursing student</span></div><div class="stat"><b>hobby</b><span>anime, books, dancing</span></div><div class="stat"><b>nationality</b><span>dominican cuban</span></div><div class="stat"><b>zodiac</b><span>aries ☀︎︎ aries ↑ aries ☽</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                Na<b>she</b></div><div class="title">
+                Hey, there! I see you're new, 어서 오십시오!! ♡
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>birthday wishes</b><span>level 4</span></div><div class="bar"><div class="bar-filled" style="width:40%;"></div></div><div class="bar-title"><b>gifts</b><span>93%</span></div><div class="bar"><div class="bar-filled" style="width:93%;"></div></div><div class="bar-title"><b>party</b><span>27%</span></div><div class="bar"><div class="bar-filled" style="width:21%;"></div></div><div class="bar-title"><b>food</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>none of my friends came</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>excitement</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span>1</span><span>2</span><span>3</b></span><span>4</span><span>5</b></span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</b></span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b title="My birthdaaaay!!!!">22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span><span>31</b></span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="love"><i data-feather="sun"></i></a><a "/" title="live"><i data-feather="sun"></i></a><a "/" title="signals"><i data-feather="sun"></i></a><a "/" title="happiness"><i data-feather="sun"></i></a><a "/" title="sunshine"><i data-feather="sun"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/qMYZRfn/1.jpg');"></div></div><!-- end of single muse block --><!-- SINGLE MUSE BLOCK
+    for every muse, copy a whole block.
+    the id="NAME" should be the same as the name you've used above --><div id="muse-2" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>aspiration</b><span>happiness</span></div><div class="stat"><b>bestie</b><span>demi</span></div><div class="stat"><b>bf</b><span>ferri</span></div><div class="stat"><b>what should be in your mind?</b><span>your fucking businesses</span></div><div class="stat"><b>what do we wear?</b><span>we wear pink xoxo</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                baby <b>angel</b></div><div class="title">
+                “Angels are all around us, all the time, in the very air we breathe.” ☆
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>daydreaming</b><span>87%</span></div><div class="bar"><div class="bar-filled" style="width:87%;"></div></div><div class="bar-title"><b>tired asf</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>bad luck</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>good luck</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="spirit"><i data-feather="star"></i></a><a "/" title="joy"><i data-feather="star"></i></a><a "/" title="cotton"><i data-feather="star"></i></a><a "/" title="candy"><i data-feather="star"></i></a><a "/" title="sweet"><i data-feather="star"></i></a><a "/" title="nice girl"><i data-feather="star"></i></a><a "/" title="cutie"><i data-feather="star"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/d742WKt/tumblr-03e847e69c5db6bb6fe5950024bcd770-1215fa1f-1280-3-1.jpg');"></div></div><!-- end of single muse block --><!-- SINGLE MUSE BLOCK
+    for every muse, copy a whole block.
+    the id="NAME" should be the same as the name you've used above --><div id="muse-3" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>do i like u?</b><span>maybe...</span></div><div class="stat"><b>am i shy around u?</b><span>a lot</span></div><div class="stat"><b>what's my wish?</b><span>wish u were around</span></div><div class="stat"><b>what am i sorry for?</b><span>not telling u my feelings</span></div><div class="stat"><b>do i still like u?</b><span>yes, sir</span></div><div class="stat"><b></b><span></span></div><div class="stat"><b></b><span></span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                nice <b>gal</b></div><div class="title">
+                
+나는 수줍어, 수줍어, 수줍어 ! 귀염둥이 파이 ❀ ~ 
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>cunts</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>myself</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="adorable"><i data-feather="cloud"></i></a><a "/" title="pink"><i data-feather="cloud"></i></a><a "/" title="nice"><i data-feather="cloud"></i></a><a "/" title="baby girl"><i data-feather="cloud"></i></a><a "/" title="sparkle"><i data-feather="cloud"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/ftp7VtN/tumblr-db73d8b9482509f351d80fe97dd98141-54d79ffc-1280-3-1.jpg');"></div></div><!-- end of single muse block --><!-- place your single muse blocks above this line --><div id="muse-2" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>aspiration</b><span>happiness</span></div><div class="stat"><b>bestie</b><span>demi</span></div><div class="stat"><b>bf</b><span>ferri</span></div><div class="stat"><b>what should be in your mind?</b><span>your fucking businesses</span></div><div class="stat"><b>what do we wear?</b><span>we wear pink xoxo</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                baby <b>angel</b></div><div class="title">
+                “Angels are all around us, all the time, in the very air we breathe.” ☆
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>daydreaming</b><span>87%</span></div><div class="bar"><div class="bar-filled" style="width:87%;"></div></div><div class="bar-title"><b>tired asf</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>bad luck</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>good luck</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="spirit"><i data-feather="star"></i></a><a "/" title="joy"><i data-feather="star"></i></a><a "/" title="cotton"><i data-feather="star"></i></a><a "/" title="candy"><i data-feather="star"></i></a><a "/" title="sweet"><i data-feather="star"></i></a><a "/" title="nice girl"><i data-feather="star"></i></a><a "/" title="cutie"><i data-feather="star"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/t4LPpFq/tumblr-d4d8e78e7895f2cdc550d77281050dae-daa437a6-1280-3.jpg');"></div></div><div id="muse-5" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>do i like u?</b><span>maybe...</span></div><div class="stat"><b>am i shy around u?</b><span>a lot</span></div><div class="stat"><b>what's my wish?</b><span>wish u were around</span></div><div class="stat"><b>what am i sorry for?</b><span>not telling u my feelings</span></div><div class="stat"><b>do i still like u?</b><span>yes, sir</span></div><div class="stat"><b></b><span></span></div><div class="stat"><b></b><span></span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                nice <b>gal</b></div><div class="title">
+                
+나는 수줍어, 수줍어, 수줍어 ! 귀염둥이 파이 ❀ ~ 
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>cunts</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>myself</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="adorable"><i data-feather="star"></i></a><a "/" title="pink"><i data-feather="star"></i></a><a "/" title="nice"><i data-feather="star"></i></a><a "/" title="baby girl"><i data-feather="star"></i></a><a "/" title="sparkle"><i data-feather="star"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/t4LPpFq/tumblr-d4d8e78e7895f2cdc550d77281050dae-daa437a6-1280-3.jpg');"></div></div><div id="muse-6" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>aspiration</b><span>happiness</span></div><div class="stat"><b>bestie</b><span>demi</span></div><div class="stat"><b>bf</b><span>ferri</span></div><div class="stat"><b>what should be in your mind?</b><span>your fucking businesses</span></div><div class="stat"><b>what do we wear?</b><span>we wear pink xoxo</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                baby <b>angel</b></div><div class="title">
+                “Angels are all around us, all the time, in the very air we breathe.” ☆
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>daydreaming</b><span>87%</span></div><div class="bar"><div class="bar-filled" style="width:87%;"></div></div><div class="bar-title"><b>tired asf</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>bad luck</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>good luck</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="spirit"><i data-feather="cloud"></i></a><a "/" title="joy"><i data-feather="cloud"></i></a><a "/" title="cotton"><i data-feather="cloud"></i></a><a "/" title="candy"><i data-feather="cloud"></i></a><a "/" title="sweet"><i data-feather="cloud"></i></a><a "/" title="nice girl"><i data-feather="cloud"></i></a><a "/" title="cutie"><i data-feather="cloud"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/Gv2cV3p/tumblr-d4730802f13258eaddc29b2ac9583450-0b1a8eff-1280-1.jpg');"></div></div><div id="muse-7" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>do i like u?</b><span>maybe...</span></div><div class="stat"><b>am i shy around u?</b><span>a lot</span></div><div class="stat"><b>what's my wish?</b><span>wish u were around</span></div><div class="stat"><b>what am i sorry for?</b><span>not telling u my feelings</span></div><div class="stat"><b>do i still like u?</b><span>yes, sir</span></div><div class="stat"><b></b><span></span></div><div class="stat"><b></b><span></span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                nice <b>gal</b></div><div class="title">
+                
+나는 수줍어, 수줍어, 수줍어 ! 귀염둥이 파이 ❀ ~ 
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>cunts</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>myself</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="adorable"><i data-feather="moon"></i></a><a "/" title="pink"><i data-feather="moon"></i></a><a "/" title="nice"><i data-feather="moon"></i></a><a "/" title="baby girl"><i data-feather="moon"></i></a><a "/" title="sparkle"><i data-feather="moon"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/Jn9c5HZ/tumblr-f6335f6594284fc11b83b6dc834bef33-d6669069-1280-1.jpg');"></div></div><div id="muse-8" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>aspiration</b><span>happiness</span></div><div class="stat"><b>bestie</b><span>demi</span></div><div class="stat"><b>bf</b><span>ferri</span></div><div class="stat"><b>what should be in your mind?</b><span>your fucking businesses</span></div><div class="stat"><b>what do we wear?</b><span>we wear pink xoxo</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                baby <b>angel</b></div><div class="title">
+                “Angels are all around us, all the time, in the very air we breathe.” ☆
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>daydreaming</b><span>87%</span></div><div class="bar"><div class="bar-filled" style="width:87%;"></div></div><div class="bar-title"><b>tired asf</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>bad luck</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>good luck</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="spirit"><i data-feather="cloud"></i></a><a "/" title="joy"><i data-feather="cloud"></i></a><a "/" title="cotton"><i data-feather="cloud"></i></a><a "/" title="candy"><i data-feather="cloud"></i></a><a "/" title="sweet"><i data-feather="cloud"></i></a><a "/" title="nice girl"><i data-feather="cloud"></i></a><a "/" title="cutie"><i data-feather="cloud"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/7tp6NXx/tumblr-a02222e975b1dfa425da5721b2267775-41aa3a45-1280-1.jpg');"></div></div><div id="muse-6" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>aspiration</b><span>happiness</span></div><div class="stat"><b>bestie</b><span>demi</span></div><div class="stat"><b>bf</b><span>ferri</span></div><div class="stat"><b>what should be in your mind?</b><span>your fucking businesses</span></div><div class="stat"><b>what do we wear?</b><span>we wear pink xoxo</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                baby <b>angel</b></div><div class="title">
+                “Angels are all around us, all the time, in the very air we breathe.” ☆
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>daydreaming</b><span>87%</span></div><div class="bar"><div class="bar-filled" style="width:87%;"></div></div><div class="bar-title"><b>tired asf</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>bad luck</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>good luck</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b>22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="spirit"><i data-feather="cloud"></i></a><a "/" title="joy"><i data-feather="cloud"></i></a><a "/" title="cotton"><i data-feather="cloud"></i></a><a "/" title="candy"><i data-feather="cloud"></i></a><a "/" title="sweet"><i data-feather="cloud"></i></a><a "/" title="nice girl"><i data-feather="cloud"></i></a><a "/" title="cutie"><i data-feather="cloud"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/Gv2cV3p/tumblr-d4730802f13258eaddc29b2ac9583450-0b1a8eff-1280-1.jpg');"></div></div><div id="muse-4" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>name</b><span>naye</span></div><div class="stat"><b>pronouns</b><span>she/her</span></div><div class="stat"><b>age</b><span>18</span></div><div class="stat"><b>occupation</b><span>nursing student</span></div><div class="stat"><b>hobby</b><span>anime, books, dancing</span></div><div class="stat"><b>nationality</b><span>dominican cuban</span></div><div class="stat"><b>zodiac</b><span>aries ☀︎︎ aries ↑ aries ☽</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                Na<b>she</b></div><div class="title">
+                Hey, there! I see you're new, 어서 오십시오!! ♡
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>birthday wishes</b><span>level 4</span></div><div class="bar"><div class="bar-filled" style="width:40%;"></div></div><div class="bar-title"><b>gifts</b><span>93%</span></div><div class="bar"><div class="bar-filled" style="width:93%;"></div></div><div class="bar-title"><b>party</b><span>27%</span></div><div class="bar"><div class="bar-filled" style="width:21%;"></div></div><div class="bar-title"><b>food</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>none of my friends came</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>excitement</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span>1</span><span>2</span><span>3</b></span><span>4</span><span>5</b></span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</b></span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b title="My birthdaaaay!!!!">22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span><span>31</b></span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="love"><i data-feather="moon"></i></a><a "/" title="live"><i data-feather="moon"></i></a><a "/" title="signals"><i data-feather="moon"></i></a><a "/" title="happiness"><i data-feather="moon"></i></a><a "/" title="sunshine"><i data-feather="moon"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/87d93Lt/tumblr-9b01559a54dd105d70bd3561b29da7e7-fa5a4268-1280-1.jpg');"></div></div><div id="muse-9" class="muse"><div class="muse-stats"><div class="text-overflow"><!-- STATS
+                copy & paste an entire block for every single stat.
+                
+                <div class="stat"><b>question</b><span>answer</span></div>
+                
+                --><div class="stat"><b>name</b><span>naye</span></div><div class="stat"><b>pronouns</b><span>she/her</span></div><div class="stat"><b>age</b><span>18</span></div><div class="stat"><b>occupation</b><span>nursing student</span></div><div class="stat"><b>hobby</b><span>anime, books, dancing</span></div><div class="stat"><b>nationality</b><span>dominican cuban</span></div><div class="stat"><b>zodiac</b><span>aries ☀︎︎ aries ↑ aries ☽</span></div><!-- paste stats above this line --></div></div><div class="muse-quote"><div class="name">
+                Na<b>she</b></div><div class="title">
+                Hey, there! I see you're new, 어서 오십시오!! ♡
+            </div></div><div class="muse-bars"><div class="text-overflow"><!-- PROGRESS BARS
+                these have two blocks: a title and the bar itself
+                
+                for the title, keep the bold and span tags around them
+                to have it separate into two.
+                ie. skill name _______ 50%
+                if you don't want that, you can remove those tags and
+                it will align left.
+                
+                <div class="bar-title"><b>painting</b><span>level 4</span></div>
+                
+                for the bar itself, change the width:40%; to how far
+                you want it to be filled in.
+                
+                <div class="bar"><div class="bar-filled" style="width:40%;"></div></div>
+                
+                --><div class="bar-title"><b>birthday wishes</b><span>level 4</span></div><div class="bar"><div class="bar-filled" style="width:40%;"></div></div><div class="bar-title"><b>gifts</b><span>93%</span></div><div class="bar"><div class="bar-filled" style="width:93%;"></div></div><div class="bar-title"><b>party</b><span>27%</span></div><div class="bar"><div class="bar-filled" style="width:21%;"></div></div><div class="bar-title"><b>food</b></div><div class="bar"><div class="bar-filled" style="width:73%;"></div></div><div class="bar-title"><b>none of my friends came</b><span>zero</span></div><div class="bar"><div class="bar-filled" style="width:0%;"></div></div><div class="bar-title"><b>excitement</b><span>10/10</span></div><div class="bar"><div class="bar-filled" style="width:100%;"></div></div><!-- paste progress bars above this line --></div></div><div class="muse-calendar"><!-- CALENDAR
+            use a span tag for every date, it will be aligned for 7 in a row automatically. if you want it to match a monthly calendar and fit days of the week, leave empty spans where you want it to skip a day.
+            
+            to add an event, put a bold tag inside a span. to have a title show up on hover, add a title="name" to it.
+            
+            <span>date</span><span><b>date with event</b></span><span><b title="name of event">date with event and title</b></span>
+            
+            --><span>1</span><span>2</span><span>3</b></span><span>4</span><span>5</b></span><span>6</span><span>7</span><span>8</span><span>9</b></span><span>10</b></span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</b></span><span>20</span><span>21</span><span><b title="My birthdaaaay!!!!">22</b></span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</b></span><span>28</span><span>29</span><span>30</span><span>31</b></span></div><div class="muse-links"><!-- LINKS
+            add however many links you'd like.
+            if you want different icons, look here:
+            https://feathericons.com/ and replace the
+            data-feather with the icon name.
+            --><a "/" title="love"><i data-feather="sun"></i></a><a "/" title="live"><i data-feather="sun"></i></a><a "/" title="signals"><i data-feather="sun"></i></a><a "/" title="happiness"><i data-feather="sun"></i></a><a "/" title="sunshine"><i data-feather="sun"></i></a><!-- place links above here --></div><!-- MUSE IMAGE
+        replace the background-image url with the url of your image. it will be automically cropped and fitted in the center.
+        --><div class="muse-img" style="background-image:url('https://i.ibb.co/0q8XrKL/tumblr-b7be159296d1e9ae0d280611b5faa372-47f99ee4-1280-1.jpg');"></div></div><!-- end of individual muses --></div> <!-- end of container --><div class="credit"><a "http://pirateskinned.tumblr.com/" title="coded by nashe"><i data-feather="moon"></i></a></div><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                              "https://pirateskinned.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/p/12?route=custom_page'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script type="text/javascript" nonce="61pywujLNANpTx5KY38h3UsAI">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1646589425&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3BpcmF0ZXNraW5uZWQudHVtYmxyLmNvbS9wLzEyIiwicmVxdHlwZSI6MCwicm91dGUiOiJjdXN0b21fcGFnZSJ9&U=AJAHBELAKE&K=f6d4d54eac3524b37f0fd8b1abeb9c791cd1f5f3f0f6e49ddd0f0cadad784be8&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1646589425&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3BpcmF0ZXNraW5uZWQudHVtYmxyLmNvbS9wLzEyIiwicmVxdHlwZSI6MCwicm91dGUiOiJjdXN0b21fcGFnZSIsIm5vc2NyaXB0IjoxfQ==&U=AJAHBELAKE&K=9b6a95b5d1b152a2fa4551b94942b83f94edafe60fe488b2cca64ddcb811d8c4&R="></noscript><noscript id="bootloader" data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;c86f8a500596474a7ef5034081f694bd&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835"></noscript>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
